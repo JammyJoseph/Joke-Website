@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FortieSix — Joke Management</title>
+<meta name="description" content="FortieSix. Stockholm producer collective shaping the next generation of rap, pop, alt-indie and afrobeats." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .producer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    border-top: 1px solid rgba(15,15,14,.12);
+    border-left: 1px solid rgba(15,15,14,.12);
+  }
+
+  .genre-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    border-top: 1px solid rgba(15,15,14,.12);
+    border-left: 1px solid rgba(15,15,14,.12);
+    margin-top: 56px;
+  }
+
+  .genre-item {
+    background: var(--paper);
+    border-right: 1px solid rgba(15,15,14,.12);
+    border-bottom: 1px solid rgba(15,15,14,.12);
+    padding: clamp(24px, 3vw, 40px) clamp(28px, 3.5vw, 48px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: background .3s;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .genre-item:hover { background: #ece8df; }
+
+  .genre-name {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(20px, 2vw, 26px);
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+
+  .genre-play {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .artist-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    border-top: 1px solid rgba(15,15,14,.12);
+    border-left: 1px solid rgba(15,15,14,.12);
+  }
+
+  @media (max-width: 960px) {
+    .producer-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 640px) {
+    .genre-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 400px) {
+    .genre-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="wordmark" aria-label="Joke Management home">JOKE<span class="dot">.</span></a>
+  <nav class="primary-nav" aria-label="Primary">
+    <ul>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#work">What we do</a></li>
+      <li><a href="/#roster">Roster</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div id="mobile-nav" class="mobile-nav" hidden>
+  <ul>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#work">What we do</a></li>
+    <li><a href="/#roster">Roster</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+</div>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="eyebrow">Producer &amp; Artist Roster &middot; Spring 2026 &middot; Stockholm / UK</p>
+    <h1 class="display">
+      Fortie<span class="outline">Six</span>
+    </h1>
+    <p class="lede">
+      Stockholm producer collective shaping the next generation of rap, pop, alt-indie and afrobeats.
+    </p>
+  </section>
+
+  <section>
+    <p class="section-label">01 / Producers</p>
+    <ul class="producer-grid">
+
+      <li class="roster-card">
+        <h2 class="roster-name">Henry</h2>
+        <p class="roster-role">Pop &middot; R&amp;B &middot; Afrobeats</p>
+        <p class="roster-bio">Producer working at the intersection of rap and contemporary pop. Recent credits include Yasin, Lekaye and executive production for Malik, including a Top 4 single in Sweden. Known for pairing strong artist development with commercially minded production.</p>
+        <ul class="socials">
+          <li><a href="https://www.tiktok.com/@prod_henry" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </li>
+
+      <li class="roster-card">
+        <h2 class="roster-name">Rivelino</h2>
+        <p class="roster-role">Funk &middot; Hip-Hop &middot; Rap</p>
+        <p class="roster-bio">Producer, engineer and multi-instrumentalist whose technical expertise forms the backbone of FortieSix. Drawing on Brazilian musical influences and a deep understanding of record-making, he moves seamlessly between rap, pop and afrobeats. Recent credits include Cortex and Naliyah.</p>
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/rivelino.46/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </li>
+
+      <li class="roster-card">
+        <h2 class="roster-name">Baaba</h2>
+        <p class="roster-role">R&amp;B &middot; House</p>
+        <p class="roster-bio">Multi-instrumentalist, producer and international DJ based in Stockholm. Working across R&amp;B, afrobeats and contemporary rap, while building his house music project MAMADOU. Recent appearances include Cultur FM, Outlander Magazine and performances across Ibiza — bringing together West African influences, Scandinavian precision and global club culture.</p>
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/baaba_46/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </section>
+
+  <section>
+    <p class="section-label">02 / Genre Packs</p>
+    <h2 class="display-md">Curated,<br />playable packs.</h2>
+    <p style="color:var(--muted);margin-top:24px;max-width:52ch;font-size:17px;line-height:1.65;">Sorted by genre, not by producer. Each pack is a curated selection from across the collective.</p>
+    <nav class="genre-grid" aria-label="Genre packs">
+      <a href="https://untitled.stream/library/project/MdLDmpx2XwN5lTxGmZthA" class="genre-item" target="_blank" rel="noopener">
+        <span class="genre-name">R&amp;B</span>
+        <span class="genre-play">Play &#9656;</span>
+      </a>
+      <a href="https://untitled.stream/library/project/8DYlKvbrh4me7X3LZgaA2" class="genre-item" target="_blank" rel="noopener">
+        <span class="genre-name">Rap</span>
+        <span class="genre-play">Play &#9656;</span>
+      </a>
+      <a href="https://untitled.stream/library/project/lXsBaQWMG5UhPaa7nYk9Y" class="genre-item" target="_blank" rel="noopener">
+        <span class="genre-name">Pop</span>
+        <span class="genre-play">Play &#9656;</span>
+      </a>
+      <a href="https://untitled.stream/library/project/gUWSC9WXkHEPTb1UFtY7s" class="genre-item" target="_blank" rel="noopener">
+        <span class="genre-name">Afrobeats</span>
+        <span class="genre-play">Play &#9656;</span>
+      </a>
+      <a href="https://untitled.stream/library/project/YUYFXOyXhQxyvlx2DzpKP" class="genre-item" target="_blank" rel="noopener">
+        <span class="genre-name">House</span>
+        <span class="genre-play">Play &#9656;</span>
+      </a>
+      <a href="https://untitled.stream/library/project/EIcaJgGTATp5oDxczDg6n" class="genre-item" target="_blank" rel="noopener">
+        <span class="genre-name">Deep Afro-House</span>
+        <span class="genre-play">Play &#9656;</span>
+      </a>
+    </nav>
+  </section>
+
+  <section>
+    <p class="section-label">03 / The Artist</p>
+    <ul class="artist-grid">
+      <li class="roster-card">
+        <h2 class="roster-name">Bruno</h2>
+        <p class="roster-role">Indie / Pop &middot; Scandi Edge</p>
+        <p class="roster-bio">Swedish artist blending indie songwriting with modern pop production. Following early breakout records &ldquo;Ung&rdquo; and &ldquo;Nattetid&rdquo;, he&rsquo;s quickly building a reputation as one of the country&rsquo;s most exciting new voices.</p>
+        <ul class="socials">
+          <li><a href="https://open.spotify.com/artist/1Z5Q3hr2iNj6NHPKPVWtoL?si=yojesps8QiGMibM_zs3ozg" target="_blank" rel="noopener">Spotify</a></li>
+          <li><a href="https://untitled.stream/library/project/NazenBLQhWLtCnm9Dg3Yr" target="_blank" rel="noopener">Upcoming Releases</a></li>
+          <li><a href="https://untitled.stream/library/project/rGFbEdOUcM0unAnmZeNFA" target="_blank" rel="noopener">English Demos</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <p class="section-label">04 / Contact</p>
+    <h2 class="display-lg">
+      Get in<br />touch.
+    </h2>
+    <div class="contact-grid">
+      <div>
+        <p class="contact-kicker">J</p>
+        <a class="contact-link" href="mailto:j@jokemanagement.com">j@jokemanagement.com</a>
+      </div>
+      <div>
+        <p class="contact-kicker">K</p>
+        <a class="contact-link" href="mailto:k@jokemanagement.com">k@jokemanagement.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>
+    <p class="footer-mark">JOKE MANAGEMENT</p>
+    <p class="footer-tag">It&rsquo;s all a joke.</p>
+  </div>
+  <p class="footer-meta">&copy; Joke Management. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
